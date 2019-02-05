@@ -1933,3 +1933,9 @@ body {
 	font-size: 300px;
 	text-shadow: #444;
 }
+
+.main-heading{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 50px;
+}
