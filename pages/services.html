@@ -4,66 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1">
-  <title>Ilico Infotech</title>
+  <title>Services | Ilico Infotech</title>
   <link rel="icon" href="../img/ilico_infotech.png" type="image/png">
-  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="../css/style.css" rel="stylesheet" type="text/css">
-  <link href="../css/linecons.css" rel="stylesheet" type="text/css">
-  <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="../css/responsive.css" rel="stylesheet" type="text/css">
-  <link href="../css/animate.css" rel="stylesheet" type="text/css">
-  <link href="../css/s1.css" rel="stylesheet" type="text/css">
-
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic'
-    rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
-
-  <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
-  <script type="text/javascript" src="../js/jquery-scrolltofixed.js"></script>
-  <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="../js/jquery.isotope.js"></script>
-  <script type="text/javascript" src="../js/wow.js"></script>
-  <script type="text/javascript" src="../js/classie.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function (e) {
-      $('.res-nav_click').click(function () {
-        $('ul.toggle').slideToggle(600)
-      });
-
-      $(document).ready(function () {
-        $(window).bind('scroll', function () {
-          if ($(window).scrollTop() > 0) {
-            $('#header_outer').addClass('fixed');
-          } else {
-            $('#header_outer').removeClass('fixed');
-          }
-        });
-
-      });
-
-
-    });
-
-    function resizeText() {
-      var preferredWidth = 767;
-      var displayWidth = window.innerWidth;
-      var percentage = displayWidth / preferredWidth;
-      var fontsizetitle = 25;
-      var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-      $(".divclass").css("font-size", newFontSizeTitle)
-    }
-
-  </script>
 </head>
 
 <body>
 
+  <div id="skip"></div>
   <!--Header_section-->
   <header id="header_outer">
     <div class="container">
@@ -71,28 +19,30 @@
         <div class="logo"><a href="../index.html"><img src="../img/ilico_infotech.png" height="40px" alt=""></a></div>
         <nav class="nav" id="nav">
           <ul class="toggle">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./aboutus.html">About Us</a></li>
-              <li class="dropdown">
-                <span>Services</span>
-                <div class="dropdown-content">
-                    <p><a href="#staffing_solutions">Staffing Solution</a></p>
-                    <p><a href="#software_solutions">Software Solutions</a></p>
-                </div>
-              </li>
-              <li><a href="./training_and_devlopment.html">Training & Devlopment</a></li>
-              <li><a href="./clients.html">Clients</a></li>
-              <li><a href="./career.html">Career</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-          <ul class="">
-            <li><a href="../index.html">Home</a></li>   
+            <li><a href="../index.html">Home</a></li>
             <li><a href="./aboutus.html">About Us</a></li>
             <li class="dropdown">
               <span>Services</span>
               <div class="dropdown-content">
-                  <p><a href="#staffing_solutions">Staffing Solution</a></p>
-                  <p><a href="#software_solutions">Software Solutions</a></p>
+                <p><a href="#staffing_solutions">Staffing Solution</a></p>
+                <p><a href="#software_solutions">Software Solutions</a></p>
+
+              </div>
+            </li>
+            <li><a href="./training_and_devlopment.html">Training & Devlopment</a></li>
+            <li><a href="./clients.html">Clients</a></li>
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li class="dropdown">
+              <span>Services</span>
+              <div class="dropdown-content">
+                <p><a href="#staffing_solutions">Staffing Solution</a></p>
+                <p><a href="#software_solutions">Software Solutions</a></p>
+
               </div>
             </li>
             <li><a href="./training_and_devlopment.html">Training & Devlopment</a></li>
@@ -106,14 +56,9 @@
     </div>
   </header>
   <!--Header_section-->
-  <div class="row">
-      <div class="col-md-2"></div>
-        <div class="col-md-8" style="height:70%;width:70%;" >
-            <img src="../img/underdev.jpg" alt="Web Page Under Devlopment">
-        </div>
-        <div class="col-md-2"></div>
-  </div>
-  
+
+
+  <!-- footer_section -->
   <footer class="footer_section" id="contact">
     <div class="container">
       <section class="main-section contact" id="contact">
@@ -147,7 +92,7 @@
             </div>
           </div>
         </div>
-       
+
         <hr>
         <div class="row">
           <div class="col-md-12 wow fadeInUp contact_block ">
@@ -197,12 +142,64 @@
     </div>
     <div class="bottom-up" style="text-align:center;">
       <span>
-        <a href="#particles-js" style="color:white;"><i class="fa fa-chevron-up fa-2x contact_block_icon icon3 rollIn animated wow"></i></a>
+        <a href="#skip" style="color:white;"><i class="fa fa-chevron-up fa-2x contact_block_icon icon3 rollIn animated wow"></i></a>
       </span>
     </div>
   </footer>
+  <!-- footer_section -->
+
+  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../css/linecons.css" rel="stylesheet" type="text/css">
+  <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+  <link href="../css/animate.css" rel="stylesheet" type="text/css">
+  <link href="../css/s1.css" rel="stylesheet" type="text/css">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/jquery-scrolltofixed.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../js/jquery.isotope.js"></script>
+  <script type="text/javascript" src="../js/wow.js"></script>
+  <script type="text/javascript" src="../js/classie.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function (e) {
+      $('.res-nav_click').click(function () {
+        $('ul.toggle').slideToggle(600)
+      });
+
+      $(document).ready(function () {
+        $(window).bind('scroll', function () {
+          if ($(window).scrollTop() > 0) {
+            $('#header_outer').addClass('fixed');
+          } else {
+            $('#header_outer').removeClass('fixed');
+          }
+        });
+
+      });
 
 
+    });
+
+    function resizeText() {
+      var preferredWidth = 767;
+      var displayWidth = window.innerWidth;
+      var percentage = displayWidth / preferredWidth;
+      var fontsizetitle = 25;
+      var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+      $(".divclass").css("font-size", newFontSizeTitle)
+    }
+  </script>
   <script>
     var myIndex = 0;
     carousel();
@@ -222,7 +219,6 @@
       x[myIndex].style.display = "block";
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
-
   </script>
   <script type="text/javascript">
     $(document).ready(function (e) {
@@ -234,7 +230,6 @@
       });
 
     });
-
   </script>
   <script>
     wow = new WOW({
@@ -250,7 +245,6 @@
       section.className = 'wow lightSpeedIn';
       this.parentNode.insertBefore(section, this);
     };
-
   </script>
   <script type="text/javascript">
     $(window).load(function () {
@@ -270,7 +264,6 @@
         event.preventDefault();
       });
     })
-
   </script>
 
   <script type="text/javascript">
@@ -349,7 +342,6 @@
       jQuery('#all').click();
       return false;
     });
-
   </script>
   <script src='./js/particles.js'></script>
   <script src='./js/particles.min.js'></script>
