@@ -7,30 +7,31 @@
   <title>Ilico Infotech</title>
   <link rel="icon" href="./img/ilico_infotech.png" type="image/png">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta name="google-site-verification" content="YF-QKvmm3C6laUcQa7MQewZzfgZNGqlXdm39pjZrT3I" />
 </head>
 
 <body>
-  <div id="skip"></div>
-<!--Header_section-->
+  <div id="top"></div>
+  <!--Header_section-->
   <header id="header_outer">
-    <div class="container">
+    <div class="container" style="width:100% !important;">
       <div class="header_section">
         <div class="logo"><a href="#"><img src="./img/ilico_infotech.png" height="40px" alt=""></a></div>
         <nav class="nav" id="nav">
           <ul class="toggle">
-              <li><a href="#">Home</a></li>
-              <li><a href="#top_content">About Us</a></li>
-              <li class="dropdown">
-                <span>Services</span>
-                <div class="dropdown-content">
-                    <p><a href="./pages/services.html#staffing_solutions">Staffing Solution</a></p>
-                    <p><a href="./pages/services.html#software_solutions">Software Solutions</a></p>
-                </div>
-              </li>
-              <li><a href="./pages/training_and_internship.html">Training & Internship</a></li>
-              <li><a href="./pages/clients.html">Clients</a></li>
-              <li><a href="./pages/career.html">Career</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#top_content">About Us</a></li>
+            <li class="dropdown">
+              <span>Services</span>
+              <div class="dropdown-content">
+                <p><a href="./pages/services-staffing.html">Staffing Solution</a></p>
+                <p><a href="./pages/services-software.html">Software Solutions</a></p>
+              </div>
+            </li>
+            <li><a href="./pages/training_and_internship.html">Training & Internship</a></li>
+            <li><a href="./pages/clients.html">Clients</a></li>
+            <li><a href="./pages/career.html">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class="">
             <li><a href="#">Home</a></li>
@@ -38,8 +39,8 @@
             <li class="dropdown">
               <span>Services</span>
               <div class="dropdown-content">
-                  <p><a href="./pages/services.html#staffing_solutions">Staffing Solution</a></p>
-                  <p><a href="./pages/services.html#software_solutions">Software Solutions</a></p>
+                <p><a href="./pages/services-staffing.html">Staffing Solution</a></p>
+                <p><a href="./pages/services-software.html">Software Solutions</a></p>
               </div>
             </li>
             <li><a href="./pages/training_and_devlopment.html">Training & Devlopment</a></li>
@@ -54,13 +55,63 @@
   </header>
   <!--Header_section-->
   <div id='particles-js'>
-    <div class="service_icon1 icon3 delay-03s animated wow  zoomIn" style="text-align:center;position: absolute;right: 50px;bottom: 0px;">
-      <span>
+    <div class="service_icon1 icon3" style="text-align:center;position: absolute;right: 50px;bottom: 0px;">
+      <button class="open-button" onclick="openForm()"><span>
         <h1>Let's Talk</h1>
-        <i class="fa fa-long-arrow-right"></i></span>
+        <i class="fa fa-long-arrow-right"></i>
+      </span></button>
     </div>
   </div>
   </div>
+
+
+<div class="form-popup" id="myForm">
+  <form action="mailTo:info@ilicoinfotech.com" class="form-container" method="post" enctype="text/plain">
+    <label for="first_name" style="width:50%;display:inline;" ><b>First Name</b></label>
+    <input type="text" name="first_name" style="width:50%;display:inline;" required><br>
+
+    <label for="last_name" style="width:50%;display:inline;"><b>Last Name</b></label>
+    <input type="text" name="last_name" style="width:50%;display:inline;" required><br>
+    
+    <label for="email" style="width:50%;display:inline;"><b>Email</b></label>
+    <input type="text" name="email" style="width:50%;display:inline;" required><br>
+
+    <label for="phone_number" style="width:50%;display:inline;"><b>Phone Number</b></label>
+    <input type="number"  style="width:50%;display:inline;" name="phone_number" required>
+    <label for="What_would_you_like_to_do"><b>What would you like to do?</b></label><br>
+    
+    <input type="checkbox" name="What_would_you_like_to_do  " value="Grow my business">
+    <label for="What_would_you_like_to_do">Grow my business</label><br>
+    
+    <input type="checkbox" name="What_would_you_like_to_do  " value="Increase my visibility">
+    <label for="What_would_you_like_to_do">Increase my visibility</label><br>
+    
+    <input type="checkbox" name="What_would_you_like_to_do  " value="Better my Reputation">
+    <label for="What_would_you_like_to_do">Better my Reputation</label><br>
+    
+    <input type="checkbox" name="What_would_you_like_to_do  " value="Rebrand by site">
+    <label for="What_would_you_like_to_do">Rebrand by site</label><br>
+    
+    <input type="checkbox" name="What_would_you_like_to_do  " value="Source talent for me">
+    <label for="What_would_you_like_to_do">Source talent for me</label><br>
+    
+    <label for="budget"><b>What’s your estimated Monthly Budget?</b></label><br>
+    <input type="radio" name="budget" value="Less than 999">
+    <label> Less than 999 </label><br>
+    <input type="radio" name="budget" value="1000 to 4999">
+    <label > 1000 to 4999 </label><br>
+    <input type="radio" name="budget" value="5000 9999">
+    <label for=""> 5000 to 9999 </label><br>
+    <input type="radio" name="budget" value="10000 to 24999">
+    <label for="">10000 to 24999</label><br>
+    <input type="radio" name="budget" value="More than 25000">
+    <label for="">More than 25000</label><br>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
   <!--Top_content-->
   <section id="top_content" class="top_cont_outer">
     <div class="top_cont_inner">
@@ -86,90 +137,70 @@
   </section>
   <!--Top_content-->
   <!--Service-->
-  <section id="service">
+  <section id="service delay-05s animated">
     <div class="container">
       <h2>Services</h2>
       <div class="service_area">
-        <div class="row flipInX wow animated">
-          <div id="myCarousel" class="carousel slide col-lg-6 col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+        <div class="flipInX wow animated">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <!-- <ol class="carousel-indicators">
-									  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-									  <li data-target="#myCarousel" data-slide-to="1"></li>
-									  <li data-target="#myCarousel" data-slide-to="2"></li>
-									</ol>
-								 -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <p style="text-align: center;">Staffing Solutions</p>
-                <img src="./slider/Staffing Solution.jpg" alt="Staffing Solution" style="width:100%;">
-                <p> </p>
+            <div class="carousel-inner ">
+              <div class="item active row">
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                  <p style="text-align: center;font-size:20px;">Staffing Solutions</p>
+                  <img src="./slider/Staffing Solution.jpg" alt="Staffing Solution" style="width:100%;">
+                  <p> </p>
+                </div>
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                  <p style="text-align: center;font-size:20px;">Software Solutions</p>
+                  <img src="./slider/Software Solution.jpeg" alt="Software Solution" style="width:100%;">
+                  <p> </p>
+                </div>
               </div>
 
-              <div class="item">
-                <p style="text-align: center;">Software Solutions</p>
-                <img src="./slider/Software Solution.jpeg" alt="Software Solution" style="width:100%;">
-                <p> </p>
+              <div class="item row">
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                  <p style="text-align: center;font-size:20px;">Software Solutions</p>
+                  <img src="./slider/Software Solution.jpeg" alt="Software Solution" style="width:100%;">
+                  <p> </p>
+                </div>
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                  <p style="text-align: center;font-size:20px;">Training & Devlopment</p>
+                  <img src="./slider/training_and_devlopment.png" alt="Training & Devlopment" style="width:100%;">
+                  <p> </p>
+                </div>
               </div>
 
-              <div class="item">
-                <p style="text-align: center;">Training & Devlopment</p>
-                <img src="./slider/training_and_devlopment.png" alt="Training & Devlopment" style="width:100%;">
-                <p> </p>
+              <div class="item row">
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                  <p style="text-align: center;font-size:20px;">Training & Devlopment</p>
+                  <img src="./slider/training_and_devlopment.png" alt="Training & Devlopment" style="width:100%;">
+                  <p> </p>
+                </div>
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                  <p style="text-align: center;font-size:20px;">Staffing Solutions</p>
+                  <img src="./slider/Staffing Solution.jpg" alt="Staffing Solution" style="width:100%;">
+                  <p> </p>
+                </div>
               </div>
             </div>
 
             <!-- Left and right controls -->
-            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-									  <span class="glyphicon glyphicon-chevron-left"></span>
-									  <span class="sr-only">Previous</span>
-									</a>
-									<a class="right carousel-control" href="#myCarousel" data-slide="next">
-									  <span class="glyphicon glyphicon-chevron-right"></span>
-									  <span class="sr-only">Next</span>
-									</a> -->
-          </div>
-          <div id="myCarousel" class="carousel slide col-lg-6 col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
-            <!-- Indicators -->
-            <!-- <ol class="carousel-indicators">
-										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-										<li data-target="#myCarousel" data-slide-to="1"></li>
-										<li data-target="#myCarousel" data-slide-to="2"></li>
-									  </ol> -->
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-
-              <div class="item active">
-
-                <p style="text-align: center;">Software Solutions </p>
-                <img src="./slider/Software Solution.jpeg" alt="Software Solution" style="width:100%;">
-                <p> </p>
-              </div>
-
-              <div class="item">
-                <p style="text-align: center;">Training & Devlopment</p>
-                <img src="./slider/training_and_devlopment.png" alt="Training & Devlopment" style="width:100%;">
-                <p> </p>
-              </div>
-              <div class="item">
-                <p style="text-align: center;">Staffing Solutions</p>
-                <img src="./slider/Staffing Solution.jpg" alt="Staffing Solution" style="width:100%;">
-                <p> </p>
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-										<span class="glyphicon glyphicon-chevron-left"></span>
-										<span class="sr-only">Previous</span>
-									  </a>
-									  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-										<span class="glyphicon glyphicon-chevron-right"></span>
-										<span class="sr-only">Next</span>
-									  </a>
-									</div> -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
@@ -208,7 +239,7 @@
             </div>
           </div>
         </div>
-       
+
         <hr>
         <div class="row">
           <div class="col-md-12 wow fadeInUp contact_block ">
@@ -229,7 +260,8 @@
           <div class="col-lg-6 wow fadeInRight delay-06s">
             <span style="display:inline;color:white;">
               <h3 style="display:inline;text-transform:capitalize;">For more info,</h3>&nbsp;
-              <a href="mailto:info@ilicoinfotech.com?subject=Write%20to%20Ilico%20Infotech"><button id="button-mail">Write
+              <a href="mailto:info@ilicoinfotech.com?subject=Write%20to%20Ilico%20Infotech">
+                <button id="button-mail">Write
                   Us <i class="fa fa-pencil"></i> </button></a>
               &nbsp;
               <h3 style="display:inline;text-transform:lowercase;"> at info@ilicoinfotech.com.</h3>
@@ -243,11 +275,14 @@
           <div class="col-md-6">
             <ul class="social-link">
               <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="facebook animated bounceIn wow delay-03s"><a href="https://www.facebook.com/ilicoinfotech/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="linkedin animated bounceIn wow delay-04s"><a href="https://www.linkedin.com/company/ilicoinfotech/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li class="facebook animated bounceIn wow delay-03s"><a href="https://www.facebook.com/ilicoinfotech/"
+                  target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="linkedin animated bounceIn wow delay-04s"><a href="https://www.linkedin.com/company/ilicoinfotech/?originalSubdomain=in"
+                  target="_blank"><i class="fa fa-linkedin"></i></a></li>
               <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)" target="_blank"><i class="fa fa-google-plus"></i></a></li>
               <li class="youtube animated bounceIn wow delay-06s"><a href="javascript:void(0)" target="_blank"><i class="fa fa-youtube"></i></a></li>
-              <li class="instagram animated bounceIn wow delay-06s"><a href="https://www.instagram.com/ilicoinfotech/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li class="instagram animated bounceIn wow delay-06s"><a href="https://www.instagram.com/ilicoinfotech/"
+                  target="_blank"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -258,7 +293,7 @@
     </div>
     <div class="bottom-up" style="text-align:center;">
       <span>
-       <a href="#skip" style="color:white;"><i class="fa fa-chevron-up fa-2x contact_block_icon icon3 rollIn animated wow"></i></a>
+        <a href="#top" style="color:white;"><i class="fa fa-chevron-up fa-2x contact_block_icon icon3 rollIn animated wow"></i></a>
       </span>
     </div>
   </footer>
@@ -272,7 +307,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic'
     rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
- 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!-- <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script> -->
@@ -310,7 +345,6 @@
       var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
       $(".divclass").css("font-size", newFontSizeTitle)
     }
-
   </script>
   <script type="text/javascript">
     $(document).ready(function (e) {
@@ -322,9 +356,8 @@
       });
 
     });
-
   </script>
-  <!-- <script>
+  <script>
     wow = new WOW({
       animateClass: 'animated',
       offset: 100
@@ -336,10 +369,20 @@
       section.className = 'wow shake';
       section.className = 'wow zoomIn';
       section.className = 'wow lightSpeedIn';
+      section.className = 'wow filpInX';
       this.parentNode.insertBefore(section, this);
     };
-
-  </script> -->
+  </script>
+  <!-- script for mailing details -->
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
   <script type="text/javascript">
     $(window).load(function () {
 
@@ -358,7 +401,6 @@
         event.preventDefault();
       });
     })
-
   </script>
 
   <script type="text/javascript">
@@ -437,7 +479,6 @@
       jQuery('#all').click();
       return false;
     });
-
   </script>
   <script src='./js/particles.js'></script>
   <script src='./js/particles.min.js'></script>
