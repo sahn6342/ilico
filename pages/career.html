@@ -58,11 +58,63 @@
   <!--Header_section-->
 
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8" style="height:70%;width:70%;">
-      <img src="../img/underdev.jpg" alt="Web Page Under Devlopment">
+    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"></div>
+    <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8" style="height:70%;width:70%;">
+        <div class="form-popup" id="myForm">
+            <form action="mailTo:info@ilicoinfotech.com&subject=Query%20Form" class="form-container" style="display:inline-block;" method="post" enctype="text/plain">
+              <input type="text" name="Name " style="width:100%;display:inline;" placeholder="Name" required>
+              
+              <input type="text" name="Email " style="width:100%;display:inline;" placeholder="Email" validate required><br>
+          
+              <input type="number"  style="width:100%;display:inline;" name="Mobile Number " placeholder="Phone Number" vaildate required><br>
+          
+              <!-- <label for="What_would_you_like_to_do"><b>What would you like to do?</b></label><br>
+              
+              <input type="checkbox" name="What would you liKe to Do" value="Grow my business">
+              <label for="What_would_you_like_to_do">Grow my business</label><br>
+              
+              <input type="checkbox" name="What_would_you_like_to_do  " value="Increase my visibility">
+              <label for="What_would_you_like_to_do">Increase my visibility</label><br>
+              
+              <input type="checkbox" name="What_would_you_like_to_do  " value="Better my Reputation">
+              <label for="What_would_you_like_to_do">Better my Reputation</label><br>
+              
+              <input type="checkbox" name="What_would_you_like_to_do  " value="Rebrand by site">
+              <label for="What_would_you_like_to_do">Rebrand by site</label><br>
+              
+              <input type="checkbox" name="What_would_you_like_to_do  " value="Source talent for me">
+              <label for="What_would_you_like_to_do">Source talent for me</label><br> -->
+          
+              <label for="Need support in"><b>Need support in</b></label><br>
+              &nbsp;&nbsp;<input type="radio" name="Need support in " value="Website Designing/ Software Development">
+              <label>Website Designing / Software Development</label><br>
+              &nbsp;&nbsp;<input type="radio" name="Need support in " value="Search talent">
+              <label >Search talent </label><br>
+              &nbsp;&nbsp;<input type="radio" name="Need support in " value="RPO support">
+              <label for=""> RPO support </label><br>
+              &nbsp;&nbsp;<input type="radio" name="Need support in " value="Training and placement ">
+              <label for="">Training and placement</label><br>
+          
+              
+              <label for="Budget"><b>What’s your estimated Monthly Budget?</b></label><br>
+              &nbsp;&nbsp;<input type="radio" name="Budget " value="Less than $999">
+              <label> Less than $999 </label><br>
+              &nbsp;&nbsp;<input type="radio" name="Budget " value="$1000 to $4999">
+              <label >$1000 to $4999 </label><br>
+              &nbsp;&nbsp;<input type="radio" name="Budget " value="$5000 to $9999">
+              <label for=""> $5000 to $9999 </label><br>
+              &nbsp;&nbsp;<input type="radio" name="Budget " value="$10000 to $24999">
+              <label for="">$10000 to $24999</label><br>
+              &nbsp;&nbsp;<input type="radio" name="Budget " value="More than $25000">
+              <label for="">More than $25000</label><br>
+          
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          
     </div>
-    <div class="col-md-2"></div>
+    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"></div>
   </div>
 
 
@@ -208,26 +260,6 @@
       $(".divclass").css("font-size", newFontSizeTitle)
     }
   </script>
-  <script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length - 1; i++) {
-        x[i].style.display = "none";
-        x[i + 1].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length - 1) {
-        myIndex = 1
-      }
-      x[myIndex - 1].style.display = "block";
-      x[myIndex].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-  </script>
   <script type="text/javascript">
     $(document).ready(function (e) {
       $('#header_outer').scrollToFixed();
@@ -236,7 +268,6 @@
         return false
 
       });
-
     });
   </script>
   <script>
