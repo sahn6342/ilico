@@ -33,6 +33,9 @@ body {
         background-size: cover;
         -webkit-background-size: cover;
     }
+    .form-container1 input[type=text], .form-container1 input[type=number]{
+      width: 100%;
+    }
    
 }
 @media screen and (max-width: 768px) {
@@ -73,6 +76,13 @@ body {
     padding: 10px;
     background-color: #4DB5E4;
   }
+  .form-container1 {
+    /* max-width: 300px; */
+    padding: 10px;
+    /* background-color: #4DB5E4; */
+    width: 100%;
+    height: 100%;
+  }
   
   /* Full-width input fields */
   .form-container input[type=text], .form-container input[type=number]{
@@ -85,6 +95,15 @@ body {
     width:30%;
     display:inline;
   }
+  .form-container1 input[type=text], .form-container1 input[type=number], .form-container1 input[type=textarea]{
+    /* width: 100%; */
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    width:30%;
+    display:inline;
+  }
   .form-container input[type=checkbox] {
     width: 10%;
     padding: 15px;
@@ -93,13 +112,15 @@ body {
     background: #f1f1f1;
   }
   /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus ,
+  .form-container1 input[type=text]:focus, .form-container1 input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
   
   /* Set a style for the submit/login button */
-  .form-container .btn {
+  .form-container .btn,
+  .form-container1 .btn {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
@@ -116,7 +137,8 @@ body {
   }
   
   /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
+  .form-container .btn:hover, .open-button:hover,
+  .form-container1 .btn:hover, .open-button:hover  {
     opacity: 1;
   }
   input[type=number]::-webkit-inner-spin-button, 
