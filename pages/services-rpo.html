@@ -24,7 +24,7 @@
             <li class="dropdown">
               <span>Services</span>
               <div class="dropdown-content">
-                <p><a href="#">Staffing Solution</a></p>
+                <p><a href="#">RPO Services</a></p>
                 <p><a href="./services-software.html">Software Solutions</a></p>
               </div>
             </li>
@@ -39,7 +39,7 @@
             <li class="dropdown">
               <span>Services</span>
               <div class="dropdown-content">
-                <p><a href="#">Staffing Solution</a></p>
+                <p><a href="#">RPO Services</a></p>
                 <p><a href="./services-software.html">Software Solutions</a></p>
 
               </div>
@@ -55,12 +55,167 @@
     </div>
   </header>
   <!--Header_section-->
+  <div id='particles-js' class="container" style="background:#053B60; height: 300px;">
+    <div class="text-center" style="color: white;">
+      <h2 class="text-center  wow animated bounceIn delay-02s">
+        Recruitment Process Outsourcing (RPO)
+      </h2>
+      <br><br>
+      <h4 class="text-center  wow animated bounceIn delay-04s">
+        Hey! this is the first compony!
+      </h4>
+    </div><br><br>
+    <div class=" wow animated bounceIn row delay-06s">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <button class="open-button" style="position:relative;" onclick="openForm()">
+          <span>
+            <h4>Let's Talk</h4>
+          </span>
+        </button>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+
+
+  <div class="form-popup" id="myForm">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSefPaX0WEU47Qk_oZfjGeIB2BZ28pVQYrwT8Y1pIzwH2yk5wQ/formResponse"
+      target="_self" style="background-color:#4DB5E4" id="bootstrapForm" method="POST">
+
+      <fieldset>
+        <h2>Let&#x27;s Talk<br><small></small></h2>
+      </fieldset>
+
+
+      <!-- Field type: "short" id: "160771576" -->
+      <fieldset>
+        <legend for="160771576">Name</legend>
+        <div class="form-group">
+          <input id="260137727" type="text" name="entry.260137727" class="form-control" required>
+        </div>
+      </fieldset>
+
+
+      <!-- Field type: "short" id: "1143703817" -->
+      <fieldset>
+        <legend for="1143703817">Email Address</legend>
+        <div class="form-group">
+          <input id="1352506114" type="text" name="entry.1352506114" class="form-control" required>
+        </div>
+      </fieldset>
+
+
+      <!-- Field type: "short" id: "178195209" -->
+      <fieldset>
+        <legend for="178195209">Phone Number</legend>
+        <div class="form-group">
+          <input id="1265593917" type="text" name="entry.1265593917" class="form-control" required>
+        </div>
+      </fieldset>
+
+
+      <!-- Field type: "choices" id: "178954462" -->
+      <fieldset>
+        <legend for="178954462">Need support in</legend>
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.89115205" value="Website Designing / Software Development" required>
+              Website Designing / Software Development
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.89115205" value="Search talent" required>
+              Search talent
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.89115205" value="RPO support" required>
+              RPO support
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.89115205" value="Training and placement" required>
+              Training and placement
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <!-- Field type: "choices" id: "1832883934" -->
+      <fieldset>
+        <legend for="1832883934">What’s your estimated Monthly Budget?</legend>
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.5451480" value="Less than $999" required>
+              Less than $999
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.5451480" value="$1000 to $4999" required>
+              $1000 to $4999
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.5451480" value="$5000 to $9999" required>
+              $5000 to $9999
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.5451480" value="$10000 to $24999" required>
+              $10000 to $24999
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="entry.5451480" value="More than $25000" required>
+              More than $25000
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <input type="hidden" name="fvv" value="1">
+      <input type="hidden" name="fbzx" value="5875279874701763490">
+      <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+      <input type="hidden" name="pageHistory" value="0">
+
+      <center>
+        <input class="btn btn-danger" type="button" onclick="closeForm()" value="Close">
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </center>
+      <span>&nbsp;</span>
+    </form>
+  </div>
   <!-- main content section start -->
   <section id="top_content" class="top_cont_outer">
     <div class="top_cont_inner" style="background:none;">
+
       <div class="container">
         <div class="top_content">
-          <h2 id="heading" style="text-align:center;">What we serve...</h2>
+          <!-- <h2 id="heading" style="text-align:center;">What we serve...</h2> -->
+          <!-- <div class="container text-center" id="rpo_service">
+            <h3>RPO Services...</h3>
+            <img src="../img/rpo_services.gif" class=" bounceIn wow animated" alt="RPO Services provided by Ilico InfoTech">
+            <div class="bounceIn wow anamted delay-03s" >
+              hello
+            </div>
+          </div> -->
+
           <div class="row">
             <div class="col-lg-6 col-sm-7">
               <div class="top_left_cont slideInLeft wow animated" style="padding:0;">
@@ -403,6 +558,38 @@
   <script type="text/javascript" src="../js/jquery.isotope.js"></script>
   <script type="text/javascript" src="../js/wow.js"></script>
   <script type="text/javascript" src="../js/classie.js"></script>
+  <!-- This script requires jQuery and jquery-form plugin -->
+  <!-- You can use these ones from Cloudflare CDN: -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+    crossorigin="anonymous"></script>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+  <script type="text/javascript">
+    $('#bootstrapForm').submit(function (event) {
+      event.preventDefault()
+      var extraData = {}
+      $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp', // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+          // Submit of form should be successful but JSONP callback will fail because Google Forms
+          // does not support it, so this is handled as a failure.
+          alert('Thank you . We will revert you as soon as possible.')
+          // You can also redirect the user to a custom thank-you page:
+          // window.location = 'http://www.mydomain.com/thankyoupage.html'
+        }
+      })
+    })
+  </script>
   <script type="text/javascript">
     $(document).ready(function (e) {
       $('.res-nav_click').click(function () {
@@ -547,10 +734,8 @@
       return false;
     });
   </script>
-  <script src='./js/particles.js'></script>
-  <script src='./js/particles.min.js'></script>
-  <script src="./js/app.js"></script>
-  <script src="contactform/contactform.js"></script>
+
+  
 
 </body>
 
