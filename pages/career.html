@@ -199,13 +199,17 @@
 
           </div>
           <div class="col-md-6">
-            <ul class="social-link">
-              <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-              <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-              <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
-              <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-              <li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
-              <li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+            <ul class="social-link text-center">
+              <li class="twitter animated bounceIn wow delay-02s"><a href="https://twitter.com/IlicoInfotech?lang=en"
+                  target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="youtube animated bounceIn wow delay-05s"><a href="https://www.youtube.com/channel/UCtPwmmrW0Zrqk1DNxlgGbww"
+                  target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li class="linkedin animated bounceIn wow delay-04s"><a href="https://www.linkedin.com/company/ilicoinfotech/?originalSubdomain=in"
+                  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li class="instagram animated bounceIn wow delay-06s"><a href="https://www.instagram.com/ilicoinfotech/"
+                  target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li class="facebook animated bounceIn wow delay-03s"><a href="https://www.facebook.com/ilicoinfotech/"
+                  target="_blank"><i class="fa fa-facebook"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -262,7 +266,8 @@
         error: function () {
           // Submit of form should be successful but JSONP callback will fail because Google Forms
           // does not support it, so this is handled as a failure.
-          alert('Form Submitted. Thanks.')
+          alert('Response Submitted. Thanks.')
+          location.reload();
           // You can also redirect the user to a custom thank-you page:
           // window.location = 'http://www.mydomain.com/thankyoupage.html'
         }

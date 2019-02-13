@@ -1124,7 +1124,7 @@ img {
 }
 
 .social-link {
-	padding: 35px 0;
+	/* padding: 35px 0; */
 	margin: 0 0 0 68px;
 	display: block;
 	overflow: hidden;
@@ -1157,7 +1157,7 @@ img {
 }
 
 .twitter a:hover {
-	background: #55acee;
+	background: #259DE8;
 }
 
 .facebook a:hover {
@@ -1165,15 +1165,20 @@ img {
 }
 
 .youtube a:hover {
-	background: red;
+	background: #F40018;
 }
 
 .gplus a:hover {
 	background: #dd4b39;
 }
 
+.linkedin a:hover {
+	background: #0f71aa;
+}
+
+
 .instagram a:hover {
-	background: #ea4c89;
+	background: linear-gradient(to bottom left,#783EA6, red, yellow);
 }
 
 
